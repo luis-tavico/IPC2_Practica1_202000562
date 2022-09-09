@@ -1,0 +1,12 @@
+digraph ORDENES {
+            graph [label="ORDENES"
+                labelloc="t"
+                fontname="Helvetica,Arial,sans-serif"]
+            node [fontname="Helvetica,Arial,sans-serif"
+                shape=record
+                style=filled
+                fillcolor=gray95]
+            edge [dir="none"]
+            posicion1[label = <{<b>Orden 1</b> |Nombre: Pedro  <br align="center"/>Cantidad de shucos: 1  <br align="center"/>|Ingrediente: costilla ~ Tiempo: 6 minutos<br align="center"/>|Tiempo Total: 6 minutos<br align="center"/>}>]
+posicion1
+}
