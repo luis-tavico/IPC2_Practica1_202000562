@@ -1,10 +1,11 @@
 class Orden:
-    def __init__(self, numero, nombreCliente, cantidadShucos, shucos, tiempoTotal):
+    def __init__(self, numero, nombreCliente, cantidadShucos, shucos, tiempoTotal, tiempoEnCola):
         self.numero = numero
         self.nombreCliente = nombreCliente
         self.cantidadShucos = cantidadShucos
         self.shucos = shucos
         self.tiempoTotal = tiempoTotal
+        self.tiempoEnCola = tiempoEnCola
 
     def getNumero(self):
         return self.numero
@@ -21,6 +22,9 @@ class Orden:
     def getTiempoTotal(self):
         return self.tiempoTotal
 
+    def getTiempoEnCola(self):
+        return self.tiempoEnCola
+
     def setNumero(self, numero):
         self.numero = numero
 
@@ -35,3 +39,6 @@ class Orden:
 
     def setTiempoTotal(self, tiempoTotal):
         self.tiempoTotal = tiempoTotal
+
+    def setTiempoEnCola(self, tiempoEnCola):
+        self.tiempoEnCola = tiempoEnCola

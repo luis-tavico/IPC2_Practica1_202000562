@@ -41,6 +41,7 @@ class Graficar:
                 self.grafico +='Ingrediente: '+shucosDelCliente.dato.getIngrediente()+' ~ Tiempo: '+shucosDelCliente.dato.getTiempo()+'<br align="center"/>'
                 shucosDelCliente = shucosDelCliente.siguiente
             self.grafico += '|Tiempo Total: '+ordenes.dato.getTiempoTotal()+'<br align="center"/>'
+            self.grafico += 'Tiempo en cola: '+ordenes.dato.getTiempoEnCola()+' minutos<br align="center"/>'
             self.grafico += '}>]\n'
             ordenes = ordenes.siguiente
         self.grafico += "posicion1"

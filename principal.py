@@ -10,6 +10,7 @@ class Principal:
 
     def menuPrincipal(self):
         numeroOrden = 0
+        tiempoEnCola = 0
         while True:
             print(" -----Menu Principal-----")
             print("| 1. Nueva orden         |")
@@ -39,13 +40,14 @@ class Principal:
                             tiempo = 4
                         elif ingrediente == "costilla":
                             tiempo = 6
-                        tiempoTotal += tiempo
+                        tiempoTotal += tiempo      
                         tiempo = str(tiempo)+" minutos"
                         nuevoShuco = Shuco(ingrediente, tiempo)
                         shucos.push(nuevoShuco)
+                    tiempoEnCola += tiempoTotal
                     numeroOrden += 1
                     tiempoTotal = str(tiempoTotal)+" minutos"
-                    nuevaOrden = Orden(numeroOrden, nombreCliente, cantidad, shucos, tiempoTotal)
+                    nuevaOrden = Orden(numeroOrden, nombreCliente, cantidad, shucos, tiempoTotal, str(tiempoEnCola))
                     self.ordenes.push(nuevaOrden)
                     print("")
                 elif opcion == 2:      
