@@ -30,15 +30,15 @@ class Principal:
                         print("-Shuco No.", str(numero+1))
                         tiempo = 0        
                         ingrediente = input("Ingrese el ingrediente: ")
-                        if ingrediente == "salchicha":
+                        if ingrediente.lower() == "salchicha":
                             tiempo = 2
-                        elif ingrediente == "chorizo":
+                        elif ingrediente.lower() == "chorizo":
                             tiempo = 3
-                        elif ingrediente == "salami":
+                        elif ingrediente.lower() == "salami":
                             tiempo = 1.5
-                        elif ingrediente == "longaniza":
+                        elif ingrediente.lower() == "longaniza":
                             tiempo = 4
-                        elif ingrediente == "costilla":
+                        elif ingrediente.lower() == "costilla":
                             tiempo = 6
                         tiempoTotal += tiempo      
                         tiempo = str(tiempo)+" minutos"
